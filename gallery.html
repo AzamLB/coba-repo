@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EllanoPhotos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+       <h1>EllanoPhotos📸</h1>
+         <nav>
+           <a href="home.html"class="nav-link">Home</a>
+           <a href="about.html"class="nav-link">About</a>
+           <a href="gallery.html">Gallery</a>
+           <a href="#">Lorem</a>
+           <a href="#">Lorem</a>
+           <a href="#">Lorem</a>
+         </nav>
+       <a href="contact.html" class="btn">Contact</a>
+    </div>
+  </header>
+    <section class="gallery">
+     <img src="img/p01.jpg" alt="Portofolio 1">
+     <img src="img/p02.jpg" alt="Portofolio 2">
+     <img src="img/p03.jpg" alt="Portofolio 3">
+     <img src="img/p04.jpg" alt="Portofolio 4">
+     <img src="img/p05.jpg" alt="Portofolio 5">
+     <img src="img/p06.jpg" alt="Portofolio 6">
+     <img src="img/p07.jpg" alt="Portofolio 7">
+     <img src="img/p08.jpg" alt="Portofolio 8">
+     <img src="img/p09.jpg" alt="Portofolio 9">
+     <img src="img/p10.jpg" alt="Portofolio 10">
+     <img src="img/p11.jpg" alt="Portofolio 11">
+     <img src="img/p12.jpg" alt="Portofolio 12">
+    </section>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <p>&copy; 2025 Azam Lufelan. XI DKV 1.</p>
+  </footer>
+  <script>
+    const links = document.querySelectorAll('.nav-link');
+    links.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(() => {
+          window.location = this.href;
+        }, 500);
+      });
+    });
+  </script>
+</body>
+</html>
